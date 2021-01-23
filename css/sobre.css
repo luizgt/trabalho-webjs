@@ -1,0 +1,50 @@
+.div-sobre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.img-perfil {
+  width: 300px;
+  height: auto;
+  border-radius: 250px;
+
+  box-shadow: 0 0 75px white;
+}
+
+.div-card-perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.h2-nome-perfil {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: white;
+}
+.div-redes-sociais {
+  margin-top: 0px;
+}
+
+.fab,
+.fas {
+  font-size: 1.9rem;
+  margin: 5px;
+}
+
+.fa-linkedin {
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+.fa-facebook-square {
+  color: white;
+}
+.fa-at {
+  color: white;
+}
