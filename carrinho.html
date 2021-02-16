@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/icone.png">
     <title>Loja Pequena Sereia</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/carrinho.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <script type="text/javascript" src="produtos.js"></script>
@@ -18,22 +18,7 @@
         <a href="./sobre.html" class="item-header">Sobre</a>
       </div>
       <div class="main">
-        <div class="coluna-esquerda">
-          <div>
-            <input type="checkbox" class="item-filtro" id="fem" name="fem" checked /> <label for="fem">Feminino</label>
-          </div>
-          <div>
-            <input type="checkbox" class="item-filtro" id="mas" name="mas" checked /> <label for="mas">Masculino</label>
-          </div>
-          <div>
-            <input type="checkbox" class="item-filtro" id="inf" name="inf" checked /> <label for="inf">Infantil</label>
-          </div>
-          
-          <div style="margin-top: 20px;">
-            <input id="valor" type="range" min="50" max="250" step="50" value="250">
-            <p id="valor-filtro-tela">R$ 250,00</p>
-          </div>
-        </div>
+          <h2>Seu carrinho de compras: </h2>
         <div class="coluna-direita" id="produtos"></div>
       </div>
       <div class="div-footer">
@@ -41,5 +26,5 @@
       </div>
     </div>
   </body>
-  <script src="index.js"></script>
+  <script src="carrinho.js"></script>
 </html>

@@ -1,5 +1,7 @@
 window.onload = aplicarFiltro(produtos);
 let produtosFiltrados = produtos;
+let produtosEscolhidos = [];
+var numberPattern = /\d+/g;
 
 var html = "";
 
@@ -12,8 +14,8 @@ function aplicarFiltro(produtosFiltrados) {
         html += '<div class="card">' +
                     '<img src=" ' + produtosFiltrados[i].foto + '" alt="Avatar" style="width:100%">' +
                     '<div class="descricao">' +
-                        '<h4><b>' + produtosFiltrados[i].nome + '</b></h4>' +
-                        '<p>Categoria: '+ produtosFiltrados[i].categoria +'</p>' +
+                        '<h4 id="nome" ><b>'+ i + " " + produtosFiltrados[i].nome + '</b></h4>' +
+                        '<p> '+ produtosFiltrados[i].categoria +'</p>' +
                         '<p> R$ '+ produtosFiltrados[i].preco +'</p>' +
                     '</div>' +
                 '</div>'
@@ -21,8 +23,20 @@ function aplicarFiltro(produtosFiltrados) {
 
   $("#produtos").append(html);
 
-  $(".card").click(function (event) {
-    console.log("clicou no elemento: " + event);
+  $(".card").click(function (e) {
+    var text = $(this).text().split('');
+    var id = text[0];
+    if(text[1].match(numberPattern)){
+        console.log("aqui")
+        id = id + text[1];
+    }
+    console.log("clicou no elemento: " + id);
+    var elementoClicado = produtosFiltrados[id];
+    produtosEscolhidos.push(elementoClicado);
+    console.log(produtosEscolhidos)
+
+    let para_enviar = JSON.stringify(produtosEscolhidos);
+	sessionStorage.setItem('meus_dados', para_enviar);
   });
 }
 
