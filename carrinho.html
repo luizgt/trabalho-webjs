@@ -4,21 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/icone.png">
-    <title>Loja Pequena Sereia</title>
+    <title>Carrinho - Pequena Sereia</title>
     <link rel="stylesheet" href="./css/carrinho.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/bec760ab30.js" crossorigin="anonymous"></script>
     
-    <script type="text/javascript" src="produtos.js"></script>
+    <script type="text/javascript" src="./js/produtos.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <h1 class="h1-header">Pequena Sereia</h1>
-        <a href="./carrinho.html" class="item-header">Carrinho</a>
-        <a href="./sobre.html" class="item-header">Sobre</a>
+        <a href="./index.html">
+          <h1 class="h1-header">Pequena Sereia</h1>
+        </a>
+        <div class="div-header">
+          <a href="./sobre.html" class="item-header">Sobre</a>
+          <a href="./carrinho.html" class="item-header">Carrinho<i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+      <div class="info-carrinho">
+        <h2 class="subtitulo">Seu carrinho de compras </h2>
+        <div class="div-checkout">
+          <a href="./checkout.html">Checkout 
+            <i class="fas fa-money-check-alt"></i>
+          </a>
+        </div>
       </div>
       <div class="main">
-          <h2>Seu carrinho de compras: </h2>
         <div class="coluna-direita" id="produtos"></div>
       </div>
       <div class="div-footer">
@@ -26,5 +38,5 @@
       </div>
     </div>
   </body>
-  <script src="carrinho.js"></script>
+  <script src="./js/carrinho.js"></script>
 </html>

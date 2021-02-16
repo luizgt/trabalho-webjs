@@ -3,13 +3,13 @@ let produtos = [
         "nome": "Camisa Listrada - Amarela",
         "categoria": "Masculina",
         "preco": 75.00,
-        "foto": "https://i1.wp.com/assets.propmark.com.br/uploads/2019/10/camisa-renner.jpg?fit=1640%2C720&ssl=1"
+        "foto": "./images/roupas/cam2.png"
     },
     {
         "nome": "Camisa Listrada - Colorida",
         "categoria": "Masculina",
         "preco": 85.00,
-        "foto": "https://i.pinimg.com/originals/c5/df/42/c5df42ef6cb120c30e4cdf1c190e04d5.png"
+        "foto": "./images/roupas/cam1.png"
     },
     {
         "nome": "Camisa Listrada - Vermelha",
@@ -21,55 +21,55 @@ let produtos = [
         "nome": "Camisa Listrada - Branca",
         "categoria": "Masculina",
         "preco": 40.00,
-        "foto": "https://i.pinimg.com/474x/d3/79/db/d379db322ec374fb3fd746091844ec4f.jpg"
+        "foto": "./images/roupas/cam3.png"
     },
     {
         "nome":"Camisa Listrada - Pastel",
         "categoria": "Masculina",
         "preco": 500.00,
-        "foto": "https://i.pinimg.com/originals/03/93/52/0393522a4a53ec14e17f6a3504e39462.jpg"
+        "foto": "./images/roupas/cam5.png"
     },
     {
         "nome": "Camisa Listrada - Arco Iris",
         "categoria": "Masculina",
         "preco": 75.00,
-        "foto": "https://photos.enjoei.com.br/camisa-arco-iris/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8xNjU5NDIvNGU1YWExNTk1YjJiZjQyNjRhZjkzNzgyMTdiM2RmZDYuanBn"
+        "foto": "./images/roupas/cam6.png"
     },
     {
         "nome": "Vestido Preto",
         "categoria": "Feminina",
         "preco": 80.00,
-        "foto": "http://dafitistatic-a.akamaihd.net/p/Aura-Vestido-Aura-Longo-Bolsos-Preto-3188-5376436-1-zoom.jpg"
+        "foto": "./images/roupas/vest1.png"
     },
     {
         "nome": "Vestido Estampado ",
         "categoria": "Feminina",
         "preco": 120.00,
-        "foto": "https://lojafarm.vteximg.com.br/arquivos/ids/2388855-500-750/288305_10727_2-VESTIDO-CROPPED-MIX-DE-FRUTA.jpg?v=637424623379270000"
+        "foto": "./images/roupas/vest2.png"
     },
     {
         "nome": "Vestido Azul ",
         "categoria": "Feminina",
         "preco": 150.00,
-        "foto": "https://cea.vteximg.com.br/arquivos/ids/12339663-468-560/Vestido-Feminino-Mindset-Longo-com-No-Manga-Curta-Azul-Claro-9901897-Azul_Claro_1.jpg?v=637190288865830000"
+        "foto": "./images/roupas/vest3.png"
     },
     {
         "nome": "Vestido Branco ",
         "categoria": "Feminina",
         "preco": 100.00,
-        "foto": "https://i.pinimg.com/564x/d7/7d/c6/d77dc6f3d9ad65cc5e77367461a84986.jpg"
+        "foto": "./images/roupas/vest4.png"
     },
     {
         "nome": "Vestido Rosa",
         "categoria": "Feminina",
         "preco": 100.00,
-        "foto": "https://i.pinimg.com/564x/0f/81/46/0f81468c9a0c367e07fe36d40ad8ab89.jpg"
+        "foto": "./images/roupas/vest5.png"
     },
     {
         "nome": "Vestido Jeans",
         "categoria": "Feminina",
         "preco": 70.00,
-        "foto": "https://patoge.vteximg.com.br/arquivos/ids/166582-504-759/1_VE35020.00000.jpg?v=637329641651930000"
+        "foto": "./images/roupas/vest6.png"
     },
     {
         "nome": "Body São Paulo",
