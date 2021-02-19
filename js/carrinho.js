@@ -1,7 +1,7 @@
 // para recuperar, utilizados a mesma chave 'meus_dados'
 // lembrem-se de utilizar JSON.parse() para transformar a string em objeto JavaScript!
 let dados = JSON.parse(sessionStorage.getItem('meus_dados'));
-console.log(dados);
+let pedido = [];
 
 let html = "";
 
@@ -18,3 +18,27 @@ for(var i = 0; i < dados.length; i++){
 }
 
 $("#produtos").append(html);
+
+
+function handleAccepted(){
+    let nome = document.getElementById("nome").value;
+    let nome_rua = document.getElementById("nome_rua").value;
+    let numero = document.getElementById("numero").value;
+    let complemento = document.getElementById("complemento").value;
+    let bairro = document.getElementById("bairro").value;
+
+    let pedido = [{
+        destinatario: {
+            "nome": nome,
+            "rua": nome_rua,
+            "numero": numero,
+            "complemento": complemento,
+            "bairro": bairro,
+        },
+        dados,
+    }];
+
+    let para_enviar = JSON.stringify(pedido);
+
+    sessionStorage.setItem('pedidos', para_enviar);
+}

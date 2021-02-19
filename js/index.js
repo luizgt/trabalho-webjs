@@ -27,16 +27,15 @@ function aplicarFiltro(produtosFiltrados) {
     var text = $(this).text().split('');
     var id = text[0];
     if(text[1].match(numberPattern)){
-        console.log("aqui")
         id = id + text[1];
     }
-    console.log("clicou no elemento: " + id);
     var elementoClicado = produtosFiltrados[id];
     produtosEscolhidos.push(elementoClicado);
-    console.log(produtosEscolhidos)
 
     let para_enviar = JSON.stringify(produtosEscolhidos);
-	sessionStorage.setItem('meus_dados', para_enviar);
+	  sessionStorage.setItem('meus_dados', para_enviar);
+
+    alert("Produto: " + elementoClicado.nome + " adicionado ao seu carrinho :D " )
   });
 }
 

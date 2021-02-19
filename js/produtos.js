@@ -42,7 +42,7 @@ let produtos = [
         "foto": "./images/roupas/vest1.png"
     },
     {
-        "nome": "Vestido Estampado ",
+        "nome": "Vestido Estampado",
         "categoria": "Feminina",
         "preco": 120.00,
         "foto": "./images/roupas/vest2.png"
@@ -54,7 +54,7 @@ let produtos = [
         "foto": "./images/roupas/vest3.png"
     },
     {
-        "nome": "Vestido Branco ",
+        "nome": "Vestido Branco",
         "categoria": "Feminina",
         "preco": 100.00,
         "foto": "./images/roupas/vest4.png"

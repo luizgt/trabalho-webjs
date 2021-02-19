@@ -22,13 +22,34 @@
           <a href="./carrinho.html" class="item-header">Carrinho<i class="fas fa-shopping-cart"></i></a>
         </div>
       </div>
+      <div>
+        <h2 class="subtitulo">Adicione as informações para a entrega: </h2>
+        <div class="formulario">
+          <label for="nome">Destinatario</label><br>
+          <input type="text" id="nome" name="nome" placeholder="John Snow"><br>
+
+          <label for="nome_rua">Nome da Rua/Avenida</label><br>
+          <input type="text" id="nome_rua" name="nome_rua" placeholder="Av. Brasil"><br>
+  
+          <label for="numero">Número:</label><br>
+          <input type="text" id="numero" name="numero" placeholder="666"><br>
+  
+          <label for="complemento">Complemento:</label><br>
+          <input type="text" id="complemento" name="complemento" placeholder="apto 43"><br>
+  
+          <label for="bairro">Bairro:</label><br>
+          <input type="text" id="bairro" name="bairro" placeholder="Divino"><br>
+          
+          <div class="div-checkout">
+            <a href="./checkout.html"  onclick="handleAccepted()">Checkout 
+              <i class="fas fa-money-check-alt"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
       <div class="info-carrinho">
         <h2 class="subtitulo">Seu carrinho de compras </h2>
-        <div class="div-checkout">
-          <a href="./checkout.html">Checkout 
-            <i class="fas fa-money-check-alt"></i>
-          </a>
-        </div>
+        
       </div>
       <div class="main">
         <div class="coluna-direita" id="produtos"></div>

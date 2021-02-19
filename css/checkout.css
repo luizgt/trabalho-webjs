@@ -44,7 +44,11 @@ a {
 }
 
 .main {
-  display: flex;
+ padding: 15px;
+}
+
+.main h1{
+  color: #f707ff31;
 }
 
 .div-footer {
