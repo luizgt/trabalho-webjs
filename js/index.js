@@ -17,7 +17,7 @@ function aplicarFiltro(produtosFiltrados) {
                     '<div class="descricao">' +
                         '<h4 id="nome" ><b>'+ i + " " + produtosFiltrados[i].nome + '</b></h4>' +
                         '<p> '+ produtosFiltrados[i].categoria +'</p>' +
-                        '<p> R$ '+ produtosFiltrados[i].preco +'</p>' +
+                        '<p> R$ '+ produtosFiltrados[i].preco +',00</p>' +
                     '</div>' +
                 '</div>'
     }
@@ -33,6 +33,8 @@ function aplicarFiltro(produtosFiltrados) {
     var elementoClicado = produtosFiltrados[id];
     produtosEscolhidos.push(elementoClicado);
 
+    console.log(produtosEscolhidos);
+
     let para_enviar = JSON.stringify(produtosEscolhidos);
 	  sessionStorage.setItem('meus_dados', para_enviar);
 
@@ -40,8 +42,8 @@ function aplicarFiltro(produtosFiltrados) {
 
     $("#p-produto-adicionado").text(`${elementoClicado.nome} Adicionada ao carrinho!`); 
 
-    $(".div-produto-adicionado").show(2500);
-    $(".div-produto-adicionado").hide(2000);
+    $(".div-produto-adicionado").show(1000);
+    $(".div-produto-adicionado").hide(3000);
   });
 }
 

@@ -11,9 +11,13 @@ a {
   font-size: 1.3rem;
 }
 
+h3{
+  color: #324B50;
+}
+
 .header {
   display: flex;
-  background-color: #f707ff31;
+  background-color: #57E4FF;
   width: 100%;
   align-items: center;
 }
@@ -45,6 +49,7 @@ a {
 
 .main {
   display: flex;
+  background-color: #E6F4F1
 }
 
 .coluna-esquerda {
@@ -53,13 +58,12 @@ a {
   width: 250px;
   height: 100%;
   padding: 10px;
-
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
   background-color: white;
 }
 
 .coluna-direita {
   width: 100%;
-  background-color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -68,7 +72,7 @@ a {
 }
 
 .card {
-  background-color: #fc3765;
+  background-color: #D9B9FE;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
@@ -83,13 +87,15 @@ a {
 }
 
 .descricao {
-  font-size: 14px;
+  padding: 5px;
+  font-size: 16px;
   text-align: center;
+  color: #324B50;
 }
 
 .div-footer {
   display: flex;
-  background-color: #f707ff31;
+  background-color: #57E4FF;
   justify-content: center;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -107,13 +113,14 @@ a {
   right: 0;
   justify-content: center;
   align-items: center;
-  background-color: #fc3765c4;
+  background-color: #B0A8B9;
   margin-right: 50px;
   margin-bottom: 15px;
   border-radius: 10px;
   padding: 20px;
   display: flex;
 }
+
 .div-produto-adicionado p{
   font-size: large;
   font-weight: bold;
