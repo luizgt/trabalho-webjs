@@ -6,6 +6,7 @@ var numberPattern = /\d+/g;
 var html = "";
 
 function aplicarFiltro(produtosFiltrados) {
+  $(".div-produto-adicionado").hide();
   let html = "";
 
   $("#produtos").empty();
@@ -35,7 +36,12 @@ function aplicarFiltro(produtosFiltrados) {
     let para_enviar = JSON.stringify(produtosEscolhidos);
 	  sessionStorage.setItem('meus_dados', para_enviar);
 
-    alert("Produto: " + elementoClicado.nome + " adicionado ao seu carrinho :D " )
+    // alert("Produto: " + elementoClicado.nome + " adicionado ao seu carrinho :D " )
+
+    $("#p-produto-adicionado").text(`${elementoClicado.nome} Adicionada ao carrinho!`); 
+
+    $(".div-produto-adicionado").show(2500);
+    $(".div-produto-adicionado").hide(2000);
   });
 }
 
