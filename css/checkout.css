@@ -11,9 +11,31 @@ a {
   font-size: 1.3rem;
 }
 
+table {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+td, th {
+  border: 1px solid #E6F4F1;
+  padding: 8px;
+}
+
+th{
+  text-align: center;
+}
+
+td{
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #E6F4F1;
+}
+
 .header {
   display: flex;
-  background-color: #f707ff31;
+  background-color: #57E4FF;
   width: 100%;
   align-items: center;
 }
@@ -48,12 +70,12 @@ a {
 }
 
 .main h1{
-  color: #f707ff31;
+  color: #57E4FF;
 }
 
 .div-footer {
   display: flex;
-  background-color: #f707ff31;
+  background-color: #57E4FF;
   justify-content: center;
   padding-top: 5px;
   padding-bottom: 5px;
