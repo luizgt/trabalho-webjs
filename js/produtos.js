@@ -26,7 +26,7 @@ let produtos = [
     {
         "nome":"Camisa Listrada - Pastel",
         "categoria": "Masculina",
-        "preco": 500.00,
+        "preco": 200.00,
         "foto": "./images/roupas/cam5.png"
     },
     {
